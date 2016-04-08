@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="save water and prevent floods">
+    <meta name="author" content="Harsh Singh">
+
+    <title>Rain Check</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="raincheck-user">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">Rain Check</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/subscribe.html">Subscribe</a> </li>
+                    <li><a href="/subsidized-rain-barrels.html">Subsidized Rain Barrels</a> </li>
+                    <li><a href="/account-settings.html">Change Email Settings</a> </li>
+                    <li><a href="/faq.html">FAQ</a> </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                <form class="form-horizontal" action="http://raincheck.withamma.com:5000/user" method="post">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Create or Update your account</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+    <label class="col-md-4 control-label" for="email">Email</label>  
+      <div class="col-md-4">
+        <input id="email" name="email" type="email" required placeholder="email" class="form-control input-md">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+    <label class="col-md-4 control-label" for="password">Password</label>  
+      <div class="col-md-4">
+        <input id="password" name="password" type="password" required placeholder="password" class="form-control input-md">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+    <label class="col-md-4 control-label" for="phone">phone</label>  
+      <div class="col-md-4">
+        <input id="phone" name="phone" type="phone" required placeholder="phone" class="form-control input-md">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+    <label class="col-md-4 control-label" for="zipcode">zipcode</label>  
+      <div class="col-md-4">
+        <input id="zipcode" name="zipcode" type="text" required placeholder="zipcode" pattern="[0-9]{0,5}" class="form-control input-md">
+      </div>
+    </div>
+
+
+
+    <!-- Multiple Checkboxes -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="checkboxes">Multiple Checkboxes</label>
+      <div class="col-md-4">
+        <div class="checkbox">
+          <label for="checkboxes-0">
+            <input type="checkbox" name="strong_act_now" id="strong_act_now" checked value="1">
+            On the day of heavy rain
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="checkboxes-1">
+            <input type="checkbox" name="medium_act_now" id="medium_act_now" checked value="1">
+            On the day of moderate rain
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="checkboxes-2">
+            <input type="checkbox" name="strong_act_soon" id="strong_act_soon" checked value="1">
+            A day before heavy rain
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="checkboxes-3">
+            <input type="checkbox" name="medium_act_soon" id="medium_act_soon" checked value="1">
+            A day after heavy rain
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="singlebutton">Submit</label>
+          <div class="col-md-4">
+            <button id="singlebutton" name="singlebutton" class="btn btn-success" type="submit">Submit</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </fieldset>
+</form>
+
+                    <!-- <h1></h1> -->
+                    <!-- <form name="myForm" ng-controller="UserController">
+                <label>Email:
+                    <input type="email" name="email" ng-model="email" required>
+                </label>
+                <label>Password:
+                    <input type="password" name="password" ng-model="password" required>
+                </label>
+
+               <input type="email" name="input" ng-model="email" required>
+                    </form> -->
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <script src="js/angular.js"></script>
+
+</body>
+
+</html>
